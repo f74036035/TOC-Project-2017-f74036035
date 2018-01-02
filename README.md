@@ -7,7 +7,7 @@ A telegram bot based on a finite state machine
 ## Setup
 
 ### Prerequisite
-* Python 3
+* Python (can't install pygraphviz on Python3)
 
 #### Install Dependency
 ```sh
@@ -54,19 +54,7 @@ You can add bubble for 3 kinds of tea.
 Order as many drinks as you want and pay at once.
 Total price will be shown at the end.
 
-MENU:
-tea-
-$25 green tea*
-$25 black tea*
-$30 milk tea*
-$40 matcha
-
-coffee-
-$50 black tea
-$55 latte
-$55 cappuccino
-
-*You can add bubbles for $5
+(./img/menu.png)
 
 ## Author
 f74036035 Yo22617
