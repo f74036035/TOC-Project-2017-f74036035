@@ -38,25 +38,35 @@ You should set `WEBHOOK_URL` (in app.py) to `your-https-URL/hook`.
 #### Run the sever
 
 ```sh
-python3 app.py
+python app.py
 ```
 
 ## Finite State Machine
-![fsm](./img/show-fsm.png)
+![fsm](./img/my_state_diagram.png)
 
 
 ## Usage
-The initial state is set to `user`.
+The initial state is set to `init`.
 
-Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
+Programmed for ordering drinks.
+4 kinds of tea and 3 kinds of coffee.
+You can add bubble for 3 kinds of tea.
+Order as many drinks as you want and pay at once.
+Total price will be shown at the end.
 
-* user
-	* Input: "go to state1"
-		* Reply: "I'm entering state1"
+MENU:
+tea-
+$25 green tea*
+$25 black tea*
+$30 milk tea*
+$40 matcha
 
-	* Input: "go to state2"
-		* Reply: "I'm entering state2"
+coffee-
+$50 black tea
+$55 latte
+$55 cappuccino
 
+*You can add bubbles for $5
 
 ## Author
-[Lee-W](https://github.com/Lee-W)
+f74036035 Yo22617

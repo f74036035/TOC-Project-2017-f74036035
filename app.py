@@ -6,6 +6,8 @@ from flask import Flask, request, send_file
 
 from fsm import TocMachine
 
+from transitions.extensions import GraphMachine as Machine
+
 
 API_TOKEN = '450660612:AAHWWvRfMN2KY4n_e26tz31zL1MX2nRGWLQ'
 WEBHOOK_URL = 'https://bd615d7f.ngrok.io/hook'
@@ -140,6 +142,11 @@ machine = TocMachine(
     show_conditions=True,
 )
 
+# draw the whole graph ...
+machine.get_graph().draw('my_state_diagram.png', prog='dot')
+# ... or just the region of interest
+# (previous state, active state and all reachable states)
+#machine.get_graph(show_roi=True).draw('my_state_diagram.png', prog='dot')
 
 def _set_webhook():
     status = bot.set_webhook(WEBHOOK_URL)
