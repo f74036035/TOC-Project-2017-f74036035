@@ -59,6 +59,7 @@ class TocMachine(GraphMachine):
             print("choose matcha")
             update.message.reply_text("You ordered matcha. It's 40 NTD.")
             self.temp = 40
+            self.total += self.temp
             bot.send_photo(chat_id = my_id, photo = open('img/matcha.jpg', 'rb'))
         return text.lower() == '4'
 

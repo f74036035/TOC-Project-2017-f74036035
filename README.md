@@ -54,7 +54,7 @@ You can add bubble for 3 kinds of tea.
 Order as many drinks as you want and pay at once.
 Total price will be shown at the end.
 
-(./img/menu.png)
+![menu](./img/menu.png)
 
 ## Author
 f74036035 Yo22617
